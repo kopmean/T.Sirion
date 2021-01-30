@@ -1,0 +1,10 @@
+%red = imread('red.jpg');
+%green = imread('green.jpg');
+%blue = imread('blue.jpg');
+%result = imread('result.jpg');
+imdata = imread('result.jpg');
+RC = imdata(:,:,1); 
+GC = imdata(:,:,2);
+BC = imdata(:,:,3);
+im = cat(3,RC,GC,BC); %คำสั่ง concatenation เป็นการนำภาพมาต่อกัน
+imshow(im);
