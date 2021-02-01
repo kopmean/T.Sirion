@@ -1,0 +1,13 @@
+red=imread('red.jpg');
+bwr = im2gray(red);
+[r1 c1]=size(red);               % ดึงข้อมูล (X,Y) จากภาพ
+green = imread('green.jpg');
+bwg = im2gray(green);
+[r2 c2]=size(green);
+blue = imread('blue.jpg');
+bwb = im2gray(blue);
+[r3 c3]=size(blue);
+k = imcrop(bwr,[1,1,c1,r1]);      % ตัดรูปภาพให้มีขนาดเท่ากับ (X,Y)ที่เราดึงมา
+imtool(k);
+
+% ต้องหาค่า (X,Y) แต่ละรูปที่น้อยที่สุด
