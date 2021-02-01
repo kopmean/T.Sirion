@@ -1,0 +1,9 @@
+red=imread('red.jpg');
+bwr = im2bw(red,0.9); % ปรับสีให้มีค่าสีเท่ากับ 0 หรือ 1 BW = im2bw(X,cmap,level)
+green = imread('green.jpg'); 
+bwg = im2bw(green,0.9);
+blue = imread('blue.jpg');
+bwb = im2bw(blue,0.9);
+figure,imshow(bwr)
+figure,imshow(bwg)
+figure,imshow(bwb)
