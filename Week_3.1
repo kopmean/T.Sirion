@@ -1,0 +1,9 @@
+red=imread('red.jpg');
+bwr = im2gray(red); % แปลงเป็น gray sclae
+green = imread('green.jpg');
+bwg = im2gray(green);
+blue = imread('blue.jpg');
+bwb = im2gray(blue);
+subplot(2,2,1),imshow(bwr) % โชว์รูปภาพให้ตรงกับตำแหน่งที่เราต้องการ
+subplot(2,2,2),imshow(bwg)
+subplot(2,2,3),imshow(bwb)
